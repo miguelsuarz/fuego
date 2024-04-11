@@ -30,4 +30,4 @@ jobs:
         run: |
           docker build . --file Dockerfile --tag ghcr.io/mi-blog:latest
           docker push ghcr.io/mi-blog:latest
-
+#prueba1
