@@ -28,7 +28,7 @@ jobs:
 
       - name: 'Build Inventory Image'
         run: |
-          docker build . --file Dockerfile --tag ghcr.io/mi-blog:latest
-          docker push ghcr.io/mi-blog:latest
+          docker build . --file Dockerfile --tag mi-blog:latest
+          docker push mi-blog:latest
 
 
