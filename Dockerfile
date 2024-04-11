@@ -8,4 +8,6 @@ CMD [ "hugo", "server","--bind=0.0.0.0" ]
 FROM nginx:stable
 COPY --from=builder /app/public /usr/share/nginx/html
 #COPY --from=builder /app/themes /usr/share/nginx/html/themes
+
+#con esto hacemos publica nuestra imagen
 LABEL org.opencontainers.image.source="https://github.com/miguelsuarz/fuego"
