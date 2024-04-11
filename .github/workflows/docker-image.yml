@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build -t mi-blog:v1.5.1 -f Dockerfile .
+      run: docker build -t tag-mi-blog:v1.5.1 -f Dockerfile .
