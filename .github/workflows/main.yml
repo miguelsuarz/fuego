@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: './Store'
+        working-directory: '.'
     steps:
       - name: 'Checkout GitHub Action'
         uses: actions/checkout@main
@@ -28,5 +28,6 @@ jobs:
 
       - name: 'Build Inventory Image'
         run: |
-          docker build . --tag ghcr.io/miguelsuarz/store:latest
-          docker push ghcr.io/miguelsuarz/store:latest
+          docker build . --file Dockerfile --tag ghcr.io/miguelsuarz/mi-blog:latest
+          docker push ghcr.io/miguelsuarz/mi-blog:latest
+#prueba1
