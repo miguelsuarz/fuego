@@ -1,0 +1,5 @@
+baseURL = 'https://example.org/'
+languageCode = 'es'
+title = 'de nuevo desde hugo.toml'
+theme = 'lightbi-hugo'
+paginate = 1
